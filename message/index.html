@@ -268,35 +268,42 @@
         </div>
     </div>
 
-    
+    <!-- <center>这是评论区</center> -->
+    <!-- <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'QhUuHgt0Xk04veflHSYpPXyi-gzGzoHsz',
+            appKey: 'YRAtPqrnbG5B5x1XM6evL3gl'
+        })
+    </script> -->
+    <!-- 来必力City版安装代码 -->
+    <div class="card">
+        <div id="lv-container" data-id="city" data-uid="MTAyMC80MDQyMi8xNjk0OQ==">
+            <script type="text/javascript">
+                (function (d, s) {
+                    var j, e = d.getElementsByTagName(s)[0];
 
-    
+                    if (typeof LivereTower === 'function') {
+                        return;
+                    }
 
-    
-        <div class="disqus-card card" data-aos="fade-up">
-    <div id="disqus_thread" class="card-content">
-        <noscript>Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+                    j = d.createElement(s);
+                    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                    j.async = true;
+
+                    e.parentNode.insertBefore(j, e);
+                })(document, 'script');
+            </script>
+            <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+        </div>
+        <!-- City版安装代码已完成 -->
     </div>
-</div>
 
-<script type="text/javascript">
-    disqus_config = function () {
-        this.page.url = 'https://scutem.github.io/message/index.html';
-        this.page.identifier = '/message/index.html';
-        this.page.title = '留言板';
-    };
-    let disqus_shortname = 'scutem';
+    
 
-    (function () { // DON'T EDIT BELOW THIS LINE
-        let d = document, s = d.createElement('script');
-        // 如：s.src = 'https://blinkfox.disqus.com/embed.js';
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+    
+
     
 
     
