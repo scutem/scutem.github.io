@@ -11,7 +11,14 @@
 
 公式测试mathjax 的支持及相关用法参照此帖
 
-测试公式$$\pmb {\sigma}\,=\,\begin{bmatrix}\sigma _{11}\\\sigma _{22}\\\sigma _{">
+测试公式
+
+\pmb {\sigma}
+\,=\,
+\begin{bmatrix}
+\sigma _{11}\\
+\sigma _{22}\\
+\sig">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -267,84 +274,123 @@
 </blockquote>
 <h2 id="公式测试"><a href="#公式测试" class="headerlink" title="公式测试"></a>公式测试</h2><p><code>mathjax</code> 的支持及相关用法参照<a href="http://masikkk.com/article/hexo-13-MathJax/" target="_blank" rel="noopener">此帖</a></p>
 <ol>
-<li><p>测试公式<br>$$<br>\pmb {\sigma}<br>\,=\,<br>\begin{bmatrix}<br>\sigma _{11}\\<br>\sigma _{22}\\<br>\sigma _{33}\\<br>\sigma _{23}\\<br>\sigma _{13}\\<br>\sigma _{12}<br>\end{bmatrix}<br>\,\equiv \,<br>\begin{bmatrix}<br>\sigma _{1}\\<br>\sigma _{2}\\<br>\sigma _{3}\\<br>\sigma _{4}\\<br>\sigma _{5}\\<br>\sigma _{6}<br>\end{bmatrix}\,<br>\pmb {\varepsilon}<br>\,=\,<br>\begin{bmatrix}<br>\varepsilon _{11}\\\varepsilon _{22}\\\varepsilon _{33}\\2\varepsilon _{23}\\2\varepsilon _{13}\\2\varepsilon _{12}<br>\end{bmatrix}<br>\,\equiv \,<br>\begin{bmatrix}<br>\varepsilon _{1}\\\varepsilon _{2}\\\varepsilon _{3}\\\varepsilon _{4}\\\varepsilon _{5}\\\varepsilon _{6}<br>\end{bmatrix}<br>$$</p>
-</li>
+<li><p>测试公式</p>
+<script type="math/tex; mode=display">
+\pmb {\sigma}
+\,=\,
+\begin{bmatrix}
+\sigma _{11}\\
+\sigma _{22}\\
+\sigma _{33}\\
+\sigma _{23}\\
+\sigma _{13}\\
+\sigma _{12}
+\end{bmatrix}
+\,\equiv \,
+\begin{bmatrix}
+\sigma _{1}\\
+\sigma _{2}\\
+\sigma _{3}\\
+\sigma _{4}\\
+\sigma _{5}\\
+\sigma _{6}
+\end{bmatrix}\,
+\pmb {\varepsilon}
+\,=\,
+\begin{bmatrix}
+\varepsilon _{11}\\\varepsilon _{22}\\\varepsilon _{33}\\2\varepsilon _{23}\\2\varepsilon _{13}\\2\varepsilon _{12}
+\end{bmatrix}
+\,\equiv \,
+\begin{bmatrix}
+\varepsilon _{1}\\\varepsilon _{2}\\\varepsilon _{3}\\\varepsilon _{4}\\\varepsilon _{5}\\\varepsilon _{6}
+\end{bmatrix}</script></li>
 <li><p>公式自动编号</p>
 </li>
 </ol>
 <p>使用</p>
-<pre class="line-numbers language-latex"><code class="language-latex"><span class="token equation string">$$</span>
-<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
-</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>
-<span class="token equation string">$$</span>
+<pre class="line-numbers language-lang-latex"><code class="language-lang-latex">$$
+\begin{equation}
+\end{equation}
+$$
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>例如</p>
-<pre class="line-numbers language-latex"><code class="language-latex"><span class="token equation string">$$</span>
-<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
-<span class="token equation-command regex">\sum</span>_{i=0}^n F_i <span class="token equation-command regex">\cdot</span> <span class="token equation-command regex">\phi</span> (H, p_i) - <span class="token equation-command regex">\sum</span>_{i=1}^n a_i <span class="token equation-command regex">\cdot</span> ( <span class="token equation-command regex">\tilde</span>{x_i}, <span class="token equation-command regex">\tilde</span>{y_i}) + b_i <span class="token equation-command regex">\cdot</span> ( <span class="token equation-command regex">\tilde</span>{x_i}^2 , <span class="token equation-command regex">\tilde</span>{y_i}^2 )
-</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>
-<span class="token equation string">$$</span>
-<span class="token equation string">$$</span>
-<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
-<span class="token equation-command regex">\beta</span>^*(D) = <span class="token equation-command regex">\mathop</span>{argmin} <span class="token equation-command regex">\limits</span>_{<span class="token equation-command regex">\beta</span>} <span class="token equation-command regex">\lambda</span> {||<span class="token equation-command regex">\beta</span>||}^2 + <span class="token equation-command regex">\sum</span>_{i=1}^n max(0, 1 - y_i f_{<span class="token equation-command regex">\beta</span>}(x_i)) 
-</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>
-<span class="token equation string">$$</span>
+<pre class="line-numbers language-lang-latex"><code class="language-lang-latex">$$
+\begin{equation}
+\sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )
+\end{equation}
+$$
+$$
+\begin{equation}
+\beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i)) 
+\end{equation}
+$$
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>$$<br>\begin{equation}<br>\sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )<br>\end{equation}<br>$$<br>$$<br>\begin{equation}<br>\beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i))<br>\end{equation}<br>$$</p>
-<ol start="3">
+<script type="math/tex; mode=display">
+\begin{equation}
+\sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )
+\end{equation}</script><script type="math/tex; mode=display">
+\begin{equation}
+\beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i)) 
+\end{equation}</script><ol>
 <li>禁止自动编号</li>
 </ol>
 <p>在 <code>end{equation}</code> 前加 <code>\nonumber</code> 可禁止对此公式自动编号，例如：</p>
-<pre class="line-numbers language-latex"><code class="language-latex"><span class="token equation string">$$</span>
-<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
-<span class="token equation-command regex">\sum</span>_{i=0}^n F_i <span class="token equation-command regex">\cdot</span> <span class="token equation-command regex">\phi</span> (H, p_i) - <span class="token equation-command regex">\sum</span>_{i=1}^n a_i <span class="token equation-command regex">\cdot</span> ( <span class="token equation-command regex">\tilde</span>{x_i}, <span class="token equation-command regex">\tilde</span>{y_i}) + b_i <span class="token equation-command regex">\cdot</span> ( <span class="token equation-command regex">\tilde</span>{x_i}^2 , <span class="token equation-command regex">\tilde</span>{y_i}^2 )
-<span class="token equation-command regex">\nonumber</span>
-</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>
-<span class="token equation string">$$</span>
-<span class="token equation string">$$</span>
-<span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span><span class="token equation string">
-<span class="token equation-command regex">\beta</span>^*(D) = <span class="token equation-command regex">\mathop</span>{argmin} <span class="token equation-command regex">\limits</span>_{<span class="token equation-command regex">\beta</span>} <span class="token equation-command regex">\lambda</span> {||<span class="token equation-command regex">\beta</span>||}^2 + <span class="token equation-command regex">\sum</span>_{i=1}^n max(0, 1 - y_i f_{<span class="token equation-command regex">\beta</span>}(x_i)) 
-</span><span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">equation</span><span class="token punctuation">}</span>
-<span class="token equation string">$$</span>
+<pre class="line-numbers language-lang-latex"><code class="language-lang-latex">$$
+\begin{equation}
+\sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )
+\nonumber
+\end{equation}
+$$
+$$
+\begin{equation}
+\beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i)) 
+\end{equation}
+$$
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>$$<br>\begin{equation}<br>\sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )<br>\nonumber<br>\end{equation}<br>$$<br>$$<br>\begin{equation}<br>\beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i))<br>\end{equation}<br>$$</p>
-<ol start="4">
+<script type="math/tex; mode=display">
+\begin{equation}
+\sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )
+\nonumber
+\end{equation}</script><script type="math/tex; mode=display">
+\begin{equation}
+\beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i)) 
+\end{equation}</script><ol>
 <li>手动编号</li>
 </ol>
 <p>可以在公式书写时使用 <code>\tag{手动编号}</code> 添加手动编号，例如：</p>
-<pre class="line-numbers language-latex"><code class="language-latex"><span class="token equation string">$$</span>
-x^2+y^2=1 <span class="token function selector">\tag</span><span class="token punctuation">{</span>我的公式3<span class="token punctuation">}</span>
-<span class="token equation string">$$</span>
+<pre class="line-numbers language-lang-latex"><code class="language-lang-latex">$$
+x^2+y^2=1 \tag{我的公式3}
+$$
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>$$<br>x^2+y^2=1 \tag{我的公式3}<br>$$</p>
-<h2 id="语法高亮测试"><a href="#语法高亮测试" class="headerlink" title="语法高亮测试"></a>语法高亮测试</h2><ol>
+<script type="math/tex; mode=display">
+x^2+y^2=1 \tag{我的公式3}</script><h2 id="语法高亮测试"><a href="#语法高亮测试" class="headerlink" title="语法高亮测试"></a>语法高亮测试</h2><ol>
 <li>python</li>
 </ol>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token triple-quoted-string string">"""
+<pre class="line-numbers language-lang-python"><code class="language-lang-python">"""
 Simple demo of a scatter plot.
-"""</span>
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+"""
+import numpy as np
+import matplotlib.pyplot as plt
 
 
-N <span class="token operator">=</span> <span class="token number">50</span>
-x <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>rand<span class="token punctuation">(</span>N<span class="token punctuation">)</span>
-y <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>rand<span class="token punctuation">(</span>N<span class="token punctuation">)</span>
-colors <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>rand<span class="token punctuation">(</span>N<span class="token punctuation">)</span>
-area <span class="token operator">=</span> np<span class="token punctuation">.</span>pi <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">15</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>rand<span class="token punctuation">(</span>N<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span>  <span class="token comment" spellcheck="true"># 0 to 15 point radii</span>
+N = 50
+x = np.random.rand(N)
+y = np.random.rand(N)
+colors = np.random.rand(N)
+area = np.pi * (15 * np.random.rand(N))**2  # 0 to 15 point radii
 
-plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> s<span class="token operator">=</span>area<span class="token punctuation">,</span> c<span class="token operator">=</span>colors<span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+plt.scatter(x, y, s=area, c=colors, alpha=0.5)
+plt.show()
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol start="2">
+<ol>
 <li>matlab</li>
 </ol>
-<pre class="line-numbers language-matlab"><code class="language-matlab">h1 <span class="token operator">=</span> figure<span class="token punctuation">;</span>
-<span class="token function">plot</span><span class="token punctuation">(</span><span class="token function">fltdata</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> N<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token function">xlabel</span><span class="token punctuation">(</span><span class="token string">'Time (sec)'</span><span class="token punctuation">)</span>
-<span class="token function">ylabel</span><span class="token punctuation">(</span><span class="token string">'G Force'</span><span class="token punctuation">)</span>
-<span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'G Forces over the Flight'</span><span class="token punctuation">)</span>
-<span class="token function">legend</span><span class="token punctuation">(</span><span class="token string">'Nx'</span><span class="token punctuation">,</span><span class="token string">'Ny'</span><span class="token punctuation">,</span><span class="token string">'Nz'</span><span class="token punctuation">,</span><span class="token string">'Location'</span><span class="token punctuation">,</span><span class="token string">'Best'</span><span class="token punctuation">)</span>
+<pre class="line-numbers language-lang-matlab"><code class="language-lang-matlab">h1 = figure;
+plot(fltdata(:,1), N);
+xlabel('Time (sec)')
+ylabel('G Force')
+title('G Forces over the Flight')
+legend('Nx','Ny','Nz','Location','Best')
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
@@ -424,7 +470,14 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
 
 公式测试mathjax 的支持及相关用法参照此帖
 
-测试公式$$\pmb {\sigma}\,=\,\begin{bmatrix}\sigma _{11}\\\sigma _{22}\\\sigma _{</div>
+测试公式
+
+\pmb {\sigma}
+\,=\,
+\begin{bmatrix}
+\sigma _{11}\\
+\sigma _{22}\\
+\sig</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-20
@@ -513,45 +566,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
 
 <div class="progress-bar"></div>
 
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-<!-- MathJax配置，可通过单美元符号书写行内公式等 -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    "HTML-CSS": { 
-        preferredFont: "TeX", 
-        availableFonts: ["STIX","TeX"], 
-        linebreaks: { automatic:true }, 
-        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) 
-    },
-    tex2jax: { 
-        inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
-        processEscapes: true, 
-        ignoreClass: "tex2jax_ignore|dno",
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {  
-        equationNumbers: { autoNumber: "AMS" },
-        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, 
-        Macros: { href: "{}" } 
-    },
-    messageStyle: "none"
-    }); 
-</script>
-<!-- 给MathJax元素添加has-jax class -->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<!-- 通过连接CDN加载MathJax的js代码 -->
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-
 <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
@@ -580,6 +594,42 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
 <script src="/libs/aos/aos.js"></script>
 <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
 <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-<script src="/js/matery.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/matery.js"></script>
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
