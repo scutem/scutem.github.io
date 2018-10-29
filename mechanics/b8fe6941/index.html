@@ -6,19 +6,16 @@
 <!-- hexo-inject:begin --><!-- hexo-inject:end --><head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="功能-教程-测试帖, 华南理工 STAR 力学社团">
-    <meta name="description" content="
+    <meta name="description" content="功能-教程-测试帖
 本文为相关功能的测试帖及教程帖
 
 公式测试mathjax 的支持及相关用法参照此帖
-
 测试公式
-
 \pmb {\sigma}
 \,=\,
 \begin{bmatrix}
 \sigma _{11}\\
-\sigma _{22}\\
-\sig">
+\sigma _{22}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -233,10 +230,101 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1,
+    #articleContent h2,
+    #articleContent h3,
+    #articleContent h4,
+    #articleContent h5,
+    #articleContent h6 {
+        padding-top: 76px;
+        margin-top: -76px;
+    }
+
+    #articleContent h1 {
+        line-height: 3.5rem;
+    }
+
+    #articleContent h2 {
+        line-height: 3.2rem;
+    }
+
+    #articleContent h3 {
+        line-height: 2.8rem;
+    }
+
+    #articleContent h4 {
+        line-height: 2.5rem;
+    }
+
+    #articleContent h5 {
+        line-height: 2.2rem;
+    }
+
+    #articleContent h6 {
+        line-height: 1.9rem;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: #eaeaea;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -269,13 +357,11 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
+                <h1 id="功能-教程-测试帖"><a href="#功能-教程-测试帖" class="headerlink" title="功能-教程-测试帖"></a>功能-教程-测试帖</h1><blockquote>
 <p>本文为相关功能的测试帖及教程帖</p>
 </blockquote>
 <h2 id="公式测试"><a href="#公式测试" class="headerlink" title="公式测试"></a>公式测试</h2><p><code>mathjax</code> 的支持及相关用法参照<a href="http://masikkk.com/article/hexo-13-MathJax/" target="_blank" rel="noopener">此帖</a></p>
-<ol>
-<li><p>测试公式</p>
-<script type="math/tex; mode=display">
+<h3 id="测试公式"><a href="#测试公式" class="headerlink" title="测试公式"></a>测试公式</h3><script type="math/tex; mode=display">
 \pmb {\sigma}
 \,=\,
 \begin{bmatrix}
@@ -303,11 +389,7 @@
 \,\equiv \,
 \begin{bmatrix}
 \varepsilon _{1}\\\varepsilon _{2}\\\varepsilon _{3}\\\varepsilon _{4}\\\varepsilon _{5}\\\varepsilon _{6}
-\end{bmatrix}</script></li>
-<li><p>公式自动编号</p>
-</li>
-</ol>
-<p>使用</p>
+\end{bmatrix}</script><h3 id="公式自动编号"><a href="#公式自动编号" class="headerlink" title="公式自动编号"></a>公式自动编号</h3><p>使用</p>
 <pre class="line-numbers language-lang-latex"><code class="language-lang-latex">$$
 \begin{equation}
 \end{equation}
@@ -331,10 +413,7 @@ $$
 \end{equation}</script><script type="math/tex; mode=display">
 \begin{equation}
 \beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i)) 
-\end{equation}</script><ol>
-<li>禁止自动编号</li>
-</ol>
-<p>在 <code>end{equation}</code> 前加 <code>\nonumber</code> 可禁止对此公式自动编号，例如：</p>
+\end{equation}</script><h3 id="禁止自动编号"><a href="#禁止自动编号" class="headerlink" title="禁止自动编号"></a>禁止自动编号</h3><p>在 <code>end{equation}</code> 前加 <code>\nonumber</code> 可禁止对此公式自动编号，例如：</p>
 <pre class="line-numbers language-lang-latex"><code class="language-lang-latex">$$
 \begin{equation}
 \sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )
@@ -354,19 +433,13 @@ $$
 \end{equation}</script><script type="math/tex; mode=display">
 \begin{equation}
 \beta^*(D) = \mathop{argmin} \limits_{\beta} \lambda {||\beta||}^2 + \sum_{i=1}^n max(0, 1 - y_i f_{\beta}(x_i)) 
-\end{equation}</script><ol>
-<li>手动编号</li>
-</ol>
-<p>可以在公式书写时使用 <code>\tag{手动编号}</code> 添加手动编号，例如：</p>
+\end{equation}</script><h3 id="手动编号"><a href="#手动编号" class="headerlink" title="手动编号"></a>手动编号</h3><p>可以在公式书写时使用 <code>\tag{手动编号}</code> 添加手动编号，例如：</p>
 <pre class="line-numbers language-lang-latex"><code class="language-lang-latex">$$
 x^2+y^2=1 \tag{我的公式3}
 $$
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <script type="math/tex; mode=display">
-x^2+y^2=1 \tag{我的公式3}</script><h2 id="语法高亮测试"><a href="#语法高亮测试" class="headerlink" title="语法高亮测试"></a>语法高亮测试</h2><ol>
-<li>python</li>
-</ol>
-<pre class="line-numbers language-lang-python"><code class="language-lang-python">"""
+x^2+y^2=1 \tag{我的公式3}</script><h2 id="语法高亮测试"><a href="#语法高亮测试" class="headerlink" title="语法高亮测试"></a>语法高亮测试</h2><h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre class="line-numbers language-lang-python"><code class="language-lang-python">"""
 Simple demo of a scatter plot.
 """
 import numpy as np
@@ -382,10 +455,7 @@ area = np.pi * (15 * np.random.rand(N))**2  # 0 to 15 point radii
 plt.scatter(x, y, s=area, c=colors, alpha=0.5)
 plt.show()
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol>
-<li>matlab</li>
-</ol>
-<pre class="line-numbers language-lang-matlab"><code class="language-lang-matlab">h1 = figure;
+<h3 id="matlab"><a href="#matlab" class="headerlink" title="matlab"></a>matlab</h3><pre class="line-numbers language-lang-matlab"><code class="language-lang-matlab">h1 = figure;
 plot(fltdata(:,1), N);
 xlabel('Time (sec)')
 ylabel('G Force')
@@ -454,54 +524,30 @@ legend('Nx','Ny','Nz','Location','Best')
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">本篇</div>
+            <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
-                <a href="/mechanics/b8fe6941/">
+                <a href="/mechanics/4a17b156/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/hqyyqh/blogimg/master/img20181020162351.png" class="responsive-img" alt="功能-教程-测试帖">
                         
-                        <span class="card-title">功能-教程-测试帖</span>
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">
-本文为相关功能的测试帖及教程帖
-
-公式测试mathjax 的支持及相关用法参照此帖
-
-测试公式
-
-\pmb {\sigma}
-\,=\,
-\begin{bmatrix}
-\sigma _{11}\\
-\sigma _{22}\\
-\sig</div>
+                    <div class="summary">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-23
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/测试目录/" class="post-category" target="_blank">
-                                    测试目录
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            test
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/测试标签/" target="_blank">
-                        <span class="chip bg-color">测试标签</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -541,6 +587,53 @@ legend('Nx','Ny','Nz','Location','Best')
     </div>
 </article>
 </div>
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title">目录</div>
+            <div id="toc-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
     
 
 </main>
@@ -612,7 +705,7 @@ legend('Nx','Ny','Nz','Location','Best')
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<!-- End: Injected MathJax -->
+<!-- End: Injected MathJax --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 <!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
@@ -630,6 +723,6 @@ legend('Nx','Ny','Nz','Location','Best')
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<!-- End: Injected MathJax --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- End: Injected MathJax -->
 </body>
 </html>
